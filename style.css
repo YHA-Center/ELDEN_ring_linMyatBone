@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Belanosima:wght@400;600;700&family=Francois+One&family=Hahmlet:wght@100;200;300&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Roboto:wght@100;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hahmlet', serif;
+}
+.nav{
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.837);
+}
+.nav .tabs{
+    display: flex;
+    width: 50%;
+    height: auto;
+    margin-left: 20px;
+}
+.nav .tabs a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    font-size: bold;
+}
+.menu{
+    width: 100px;
+    height: 10vh;
+    margin-left: 50px;
+    text-align: center;
+    padding-top: 13px;
+}
+.row-1 a:hover{
+    font-size: 20px;
+    transition: all .2s ease-in-out;
+}
+.tab-content{
+    width: 100%;
+    height: 70vh;
+    display: none;
+}
+.menu.active{
+    font-size: 20px;
+    display: block;
+}
+.row-2{
+    width: 100%;
+    height: 90vh;
+}
+.tab-content.active{
+    display: block;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+}
+.home-page{
+    width: 100%;
+    height: auto;
+    background: url(img/mainBg.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px;
+}
+.homeContent{
+    padding: 25px;
+    color: white;
+}
+.homeContent span{
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.642);
+}
+.homeContent h3{
+    margin: 10px;
+    font-size: 40px;
+}
+.homeContent p{
+    margin-top: 20px;
+    font-size: 12px;
+}
+.home-page .button{
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #f5c828;
+    margin-left: 20px;
+    transition: all .2s ease-in-out;
+}
+.home-page a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    
+}
+.home-page .button:hover {
+    outline: 3px solid white;
+}
+.home-page .trailer{
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+}
+.home-page .trailer video{
+    outline: none;
+    width: 250px;
+    height: 156px;
+    margin-top:23px;
+    object-fit: cover;
+}
+.home-page .trailer img{
+    width: 230px;
+    height: 156px;
+    margin-top: 24px;
+    align-items: center;
+}
+.malenia{
+    margin-left: -5px;
+}
+.ads{
+    display: inline;
+    width: 100%;
+    height: auto;
+}
+.explore{
+    color: rgba(255, 255, 255, 0.662);
+}
+.explore h3{
+    color: white;
+}
+.explore p{
+    font-size: 13px;
+}
+@media screen and (max-width:900px) {
+    .menu{
+        width: 100px;
+        height: 10vh;
+        margin-left: 20px;
+        text-align: center;
+        padding-top: 13px;
+    }
+    .home-page{
+        width: 100%;
+        height: auto;
+    }
+    .home-page .trailer video{
+        width: 300px;
+        height: 200px;
+
+    }
+    .home-page .trailer{
+        width: 100%;
+        display: inline;
+    }
+    .home-page .trailer img{
+        width: 200px;
+        height: 100px;
+    }
+    .home-page .trailer .img-1{
+        display: flex;
+    }
+    .explore p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:396px) {
+    .menu{
+        width: 100px;
+        height: 10vh;
+        margin-left: 20px;
+        text-align: center;
+        padding-top: 13px;
+    }
+    .home-page{
+        height: auto;
+        background: url(img/mainBg.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 40px;
+        width: 100%;
+
+    }
+    .home-page .trailer video{
+        width: 300px;
+        height: 200px;
+
+    }
+    .home-page .trailer{
+        width: 100%;
+        display:inline;
+    }
+    .home-page .trailer img{
+
+        width: 150px;
+        height: 150px;
+    }
+    .home-page .trailer .img-1{
+        display: flex;
+    }
+    .ads{
+        display: block;
+    }
+    .explore p{
+        font-size: 11px;
+    }
+    .explore h3{
+        margin-top: 10px;
+        font-size: 18px ;
+    }
+/* The end of home page */
+}
+.character-page{
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+}
+.selection-bar{
+    background-color: #312626;
+    height: 90vh;
+}
+.character{
+    margin: 30px;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.553);
+    font-size: 15px;
+    cursor: pointer;
+}
+.character.active{
+    color: white;
+    width: 100%;
+}
+.character:hover{
+    color: white;
+    font-size: 17px;
+}
+
+.character-content{
+    display: none;
+    height:auto;
+}
+.character-content.active{
+    display: block;
+}
+.information{
+    height: 90vh;
+    padding: 60px;
+    background-color: black;
+}
+.header h3{
+    color: white;
+}
+.text{
+    font-size: 15px;
+    color: white;
+    margin:20px 30px;
+    width: 35%;
+    text-align: center;
+}
+.text2{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.708);
+    width: 50%;
+    margin-top: 30px;
+}
+.img img{
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    top:0;
+    margin-top: 80px;
+}
+.row-3{
+    width: 100%;
+    display: flex;
+}
+@media screen and (max-width:770px) {
+    .menu{
+        width: 100px;
+        height: 10vh;
+        margin-left: 20px;
+        text-align: center;
+        padding-top: 13px;
+    }
+    .selection-bar{
+        width: 50%;
+        height: 90vh;
+    }
+    .character{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .character:hover{
+        font-size: 12px;
+    }
+    .information{
+        padding: 0;
+        padding-left: 30px;
+        height: 90vh;
+    }
+    .text{
+        width: 70%;
+        font-size: 12px;
+        margin:0;
+        margin-top: 10px;
+    }
+    .text2{
+        margin-top: 0;
+        font-size: 10px;
+        width: 100%;
+    }
+    .img img{
+        position: relative;
+        margin: 0%;
+        width: 200px;
+        height: 280px;
+    }
+}
+@media screen and (max-width:412px){
+    .selection-bar{
+        width: 50%;
+        height: 90vh;
+    }
+    .character{
+        font-size: 10px;
+        margin-left: 0px;
+    }
+    .character:hover{
+        font-size: 12px;
+    }
+    .information{
+        width: 100%;
+        padding: 0;
+        padding-left: 30px;
+        padding-top: 40px;
+        height: 90vh;
+    }
+    .text{
+
+        width: 100%;
+        font-size: 12px;
+        margin:0;
+        margin-top: 30px;
+    }
+    .text2{
+        margin-top: 0;
+        font-size: 10px;
+        width: 100%;
+        margin-left: 50px;
+        text-align: center;
+    }
+    .row-3 .img{
+        margin-left: 60px;
+    }
+    .img img{
+        position: relative;
+        margin: 0%;
+        width: 130px;
+        height: 180px;
+    }
+    .menu{
+        width: 100px;
+        height: 10vh;
+        margin-left: 20px;
+        text-align: center;
+        padding-top: 13px;
+    }
+}
+/* end of character page */
+.about-page{
+    background-color: black;
+    height: 90vh;
+}
+.ring{
+    width: 100%;
+}
+.ring img{
+    margin-top: 40px;
+    margin-left: 50px;
+    height: 380px;
+    width: 300px;
+}
+.system{
+    width: 100%;
+}
+.system h4{
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.618);
+}
+.system li{
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.59);
+}
+.system p{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.366);
+    margin-bottom: 0px;
+}
+.system span{
+    font-size: 13px;
+    margin-left:20px ;
+    color: rgba(255, 255, 255, 0.366);
+}
+.system .community{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.system .community a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.541);
+}
+@media screen and (max-width:900px) {
+    .ring img{
+        margin-top: 50px;
+        margin-left: 10px;
+        height: 380px;
+        width: 280px;
+    }
+    .system h4{
+        margin-top: 20px;
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.618);
+    }
+    .system li{
+        font-size: 10px;
+    }
+    .system  p{
+        font-size: 10px;
+    }
+    .system span{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:576px){
+    .about-page{
+        width: 100%;
+        height: 90vh;
+    }
+    .ring{
+        overflow: hidden;
+        width: 90%;
+    }
+    .ring img{
+        width: 160px;
+        height: 300px;
+        margin-left: 0;
+    }
+    .system li{
+        font-size: 8px;
+    }
+    .system  p{
+        font-size: 8px;
+    }
+    .system span{
+        font-size: 10px;
+    }
+    
+}
