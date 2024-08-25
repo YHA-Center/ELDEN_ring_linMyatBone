@@ -102,7 +102,7 @@
 }
 .home-page .trailer video{
     outline: none;
-    width: 250px;
+    width: 230px;
     height: 156px;
     margin-top:23px;
     object-fit: cover;
@@ -140,11 +140,11 @@
     }
     .home-page{
         width: 100%;
-        height: auto;
+        height: 90vh;
     }
     .home-page .trailer video{
-        width: 300px;
-        height: 200px;
+        width: 250px;
+        height: 150px;
 
     }
     .home-page .trailer{
@@ -160,6 +160,11 @@
     }
     .explore p{
         font-size: 10px;
+    }
+}
+@media screen and (max-width:600px) {
+    .home-page{
+        height: auto;
     }
 }
 @media screen and (max-width:396px) {
@@ -181,8 +186,8 @@
 
     }
     .home-page .trailer video{
-        width: 300px;
-        height: 200px;
+        width: 250px;
+        height: 150px;
 
     }
     .home-page .trailer{
